@@ -1,0 +1,53 @@
+.search {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 21;
+    background-image: linear-gradient(to right, rgba($color-black, 0.7), rgba($color-black, 0.7));
+    cursor: pointer;
+    &__form {
+        @include poa;
+        width: 0;
+        height: 0;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        border-radius: 5rem;
+        transition: all .5s ease;
+        &--input {
+            border: 2px solid $color-grey-medium;
+            border-radius: 5rem;
+            padding: 1rem 4rem;
+            width: 90%;
+            height: 100%;
+            font-size: 2.5rem;
+            background-color: transparent;
+            outline: none;
+            color: $color-grey-bg;
+            box-shadow: 1rem 1rem 4rem .5rem rgba($color-grey-medium, .5);
+        }
+        &--btn {
+            padding: .5rem;
+            background-color: transparent;
+            border: none;
+            color: $color-grey-light;
+            font-size: 3rem;
+            cursor: pointer;
+            margin: 0rem 1rem;
+            outline: none;
+        }
+        &--open {
+            animation: searchBoxOpen .5s forwards;
+        }
+    }
+}
+
+@keyframes searchBoxOpen {
+    100% {
+        width: 50vw;
+        height: 10rem;
+    }
+}

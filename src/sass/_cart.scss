@@ -1,0 +1,160 @@
+.cart {
+    &__content {
+        margin: 5rem auto;
+        width: 90%;
+        min-height: 20rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        &--left,
+        &--right {
+            text-transform: uppercase;
+            &__table {
+                width: 100%;
+                font-size: 1.6rem;
+                color: $color-grey-medium;
+                &--head {
+                    font-weight: 100;
+                    padding: 1rem;
+                    text-align: left;
+                    border-bottom: 1px solid currentcolor;
+                }
+                &--data {
+                    padding: 1rem .5rem .5rem;
+                    text-align: center;
+                    max-height: 5rem;
+                }
+            }
+            &__buttons {
+                margin: 3rem 1rem 1rem;
+                padding: 1rem;
+                display: flex;
+                & a {
+                    color: $color-grey-light;
+                    font-size: 1.5rem;
+                    margin: .2rem;
+                    padding: 1rem 3rem;
+                    border: 1px solid currentColor;
+                    &:hover {
+                        color: $color-grey-dark;
+                    }
+                }
+            }
+        }
+        &--left {
+            flex-basis: 65.5%;
+            &__table {
+                &--data {
+                    padding: 1rem .5rem .5rem;
+                    text-align: center;
+                    max-height: 5rem;
+                    &__product {
+                        width: 100%;
+                        display: inline;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        &--image {
+                            width: 15%;
+                            height: 5rem;
+                        }
+                        &--name {
+                            width: 65%;
+                        }
+                    }
+                    &__input {
+                        padding: .5rem;
+                        width: 5rem;
+                        outline: none;
+                        border-right: .5rem;
+                        border: 1px solid $color-grey-light;
+                    }
+                }
+            }
+        }
+        &--right {
+            flex-basis: 34.5%;
+            &__table {
+                &--data {
+                    &__subtotal,
+                    &__total {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 1.4rem;
+                        padding: 1rem;
+                        border-bottom: 1px solid currentColor;
+                        &--price {
+                            font-weight: bold;
+                            color: $color-grey-dark;
+                        }
+                    }
+                }
+            }
+            &__buttons {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.table__span--2 {
+    width: 50%;
+    text-align: left;
+    & span {
+        font-size: 1rem;
+        color: $color-grey-light;
+        border: 1px solid currentColor;
+        padding: .4rem .6rem;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-right: 1rem;
+        &:hover {
+            color: $color-grey-medium;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .cart {
+        min-height: 120vh;
+        padding: 5rem 1rem;
+        &__content {
+            width: 100%;
+            min-height: 90vh;
+            flex-direction: column;
+            &--left,
+            &--right {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .cart {
+        height: 130vh;
+        &__content {
+            &--left,
+            &--right {
+                &__buttons {
+                    & a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            &--left {
+                &__table {
+                    &--data {
+                        &__product {
+                            &--image {
+                                margin-right: 1rem;
+                                width: 30%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
