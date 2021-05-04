@@ -1,0 +1,85 @@
+.product {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        color: $color-grey-medium;
+        border-top: 1px solid currentColor;
+        border-bottom: 1px solid currentColor;
+        &--left,
+        &--right {
+            flex-basis: 50%;
+            height: 95%;
+            margin: 1rem;
+            // border: 1px solid black;
+        }
+        &--left {
+            &__image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__price {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $color-grey-medium;
+    }
+    &__button {
+        padding: 1rem 3rem;
+        border-radius: 5rem;
+        outline: none;
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: rgba($color-nav, .8);
+        color: $color-white;
+        transition: all .5s ease;
+        &:hover {
+            box-shadow: .5rem .5rem 1rem .1rem rgba($color-grey-medium, .8);
+            background-color: rgba($color-nav, .7);
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .product {
+        &__content {
+            height: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .product {
+        padding: 3rem;
+        height: 130vh;
+        &__content {
+            flex-direction: column;
+            &--left,
+            &--right {
+                flex-basis: 100%;
+                height: 55%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .product {
+        height: 150vh;
+        &__content {
+            &--left,
+            &--right {
+                height: 65%;
+            }
+        }
+    }
+}

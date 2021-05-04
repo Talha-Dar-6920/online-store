@@ -1,0 +1,72 @@
+.bestselling {
+    height: 180vh;
+    background-color: $color-bg;
+    &__products {
+        margin-top: 2rem;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 5rem;
+        &--product {
+            position: relative;
+            flex-basis: 33%;
+            height: 25%;
+            box-shadow: 0 0 5rem .1rem rgba($color-grey-light, .2);
+            cursor: pointer;
+            &__images {
+                width: 100%;
+                height: 100%;
+            }
+            &__main {
+                flex-basis: 100%;
+                box-shadow: 0 0 5rem .1rem rgba($color-grey-light, .3);
+                height: 70vh;
+                display: block;
+            }
+            &:hover &__images {
+                filter: brightness(80%);
+            }
+            &:hover .popup__open--btn {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .bestselling {
+        &__products {
+            padding: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .bestselling {
+        height: 150vh;
+        &__products {
+            padding: 0;
+            &--product {
+                height: 25vh;
+                &__main {
+                    height: 70vh;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bestselling {
+        height: 300vh;
+        &__products {
+            &--product {
+                flex-basis: 100%;
+                margin: 0.5rem 0;
+                height: 14%;
+            }
+        }
+    }
+}
