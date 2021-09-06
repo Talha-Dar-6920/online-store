@@ -1,94 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEB ENGINEERING</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- ************************************************************* -->
     <!--* FOR SMALL SCREENS HAMBURGER ICON -->
     <div class="navigation__icon">
-        <span class="navigation__icon--link"></span>
+      <span class="navigation__icon--link"></span>
     </div>
     <!-- ************************************************************* -->
     <!--* NAVIGATION -->
     <div class="navigation">
-        <div class="navigation__logo">
-            <!-- <img src="./src/img/logo_white_small-removebg-preview.png" alt="main logo" class="navigation__logo--image"> -->
-            <p>Online Store</p>
-        </div>
+      <div class="navigation__logo">
+        <!-- <img src="./src/img/logo_white_small-removebg-preview.png" alt="main logo" class="navigation__logo--image"> -->
+        <p>Online Store</p>
+      </div>
 
-        <nav class="navigation__nav">
-            <ul class="navigation__nav--list">
-                <li class="navigation__nav--list__item"><a href="./index.html" class="navigation__nav--list__item--link">Home</a></li>
-                <li class="navigation__nav--list__item"><a href="#" class="navigation__nav--list__item--link active">Shop</a></li>
-                <!-- <li class="navigation__nav--list__item"><a href="./about.html" class="navigation__nav--list__item--link">About</a></li>
+      <nav class="navigation__nav">
+        <ul class="navigation__nav--list">
+          <li class="navigation__nav--list__item">
+            <a href="./index.html" class="navigation__nav--list__item--link"
+              >Home</a
+            >
+          </li>
+          <li class="navigation__nav--list__item">
+            <a href="#" class="navigation__nav--list__item--link active"
+              >Shop</a
+            >
+          </li>
+          <!-- <li class="navigation__nav--list__item"><a href="./about.html" class="navigation__nav--list__item--link">About</a></li>
                 <li class="navigation__nav--list__item"><a href="./contact.html" class="navigation__nav--list__item--link">Contact</a></li> -->
-                <li class="navigation__nav--list__item">
-                    <a href="#" class="navigation__nav--list__item--link" id="login">Login/Register</a>
-                </li>
-                <li class="navigation__nav--list__item">
-                    <a href="../../cart.html" class="navigation__nav--list__item--link" id="login">
-                        view cart
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="navigation__nav--list__item">
-                    <i class="fa fa-search navigation__nav--list__item--search__icon"></i>
-                </li>
-            </ul>
-        </nav>
+          <li class="navigation__nav--list__item">
+            <a href="#" class="navigation__nav--list__item--link" id="login"
+              >Login/Register</a
+            >
+          </li>
+          <li class="navigation__nav--list__item">
+            <a
+              href="../../cart.html"
+              class="navigation__nav--list__item--link"
+              id="login"
+            >
+              view cart
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="navigation__nav--list__item">
+            <i
+              class="fa fa-search navigation__nav--list__item--search__icon"
+            ></i>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <!-- ************************************************************* -->
     <!--* SEARCH BOX -->
 
     <div class="search">
-        <form id="search__form" class="search__form">
-            <input type="text" name="search input" id="searchBox" class="search__form--input" placeholder="search...">
-            <a href="#" class="search__form--btn">
-                <i class="fa fa-search"></i>
-            </a>
-        </form>
+      <form id="search__form" class="search__form">
+        <input
+          type="text"
+          name="search input"
+          id="searchBox"
+          class="search__form--input"
+          placeholder="search..."
+        />
+        <a href="#" class="search__form--btn">
+          <i class="fa fa-search"></i>
+        </a>
+      </form>
     </div>
 
     <!-- ************************************************************* -->
     <!--* SHOP SECTION -->
 
     <section class="shop">
-        <div class="shop__content">
-            <div class="shop__content--left">
-                <h3 class="section__heading section__heading--tertiory">
-                    catagories
-                </h3>
-                <p class="section__heading shop__content--left__catagories">
-                    all catagories
-                </p>
-                <p class="section__heading shop__content--left__catagories">
-                    sofa
-                </p>
-                <p class="section__heading shop__content--left__catagories">
-                    bed
-                </p>
-                <p class="section__heading shop__content--left__catagories">
-                    mirror
-                </p>
-                <p class="section__heading shop__content--left__catagories">
-                    table
-                </p>
-                <p class="section__heading shop__content--left__catagories">
-                    clothes
-                </p>
-            </div>
-            <div class="shop__content--right">
-                <div class="shop__content--right__products">
-                    <!-- <div class="shop__content--right__products--product display__products">
+      <div class="shop__content">
+        <div class="shop__content--left">
+          <h3 class="section__heading section__heading--tertiory">
+            catagories
+          </h3>
+          <p class="section__heading shop__content--left__catagories">
+            all catagories
+          </p>
+          <p class="section__heading shop__content--left__catagories">sofa</p>
+          <p class="section__heading shop__content--left__catagories">bed</p>
+          <p class="section__heading shop__content--left__catagories">mirror</p>
+          <p class="section__heading shop__content--left__catagories">table</p>
+          <p class="section__heading shop__content--left__catagories">
+            clothes
+          </p>
+        </div>
+        <div class="shop__content--right">
+          <div class="shop__content--right__products">
+            <!-- <div class="shop__content--right__products--product display__products">
                         <img class="shop__content--right__products--product__images" src="./src/img/mirror2.jpg" alt="bestSelling product">
                         <p class="shop__content--right__products--product__name">
                             this is the product name
@@ -232,143 +248,228 @@
                             buy now
                         </button>
                     </div> -->
-                </div>
-                <div class="shop__content--right__navigators">
-                    <div class="shop__content--right__navigators--left">
-                        <span>&LeftAngleBracket;</span>
-                    </div>
-                    <div class="shop__content--right__navigators--right">
-                        <span>&RightAngleBracket;</span>
-                    </div>
-                </div>
+          </div>
+          <div class="shop__content--right__navigators">
+            <div class="shop__content--right__navigators--left">
+              <span>&LeftAngleBracket;</span>
             </div>
+            <div class="shop__content--right__navigators--right">
+              <span>&RightAngleBracket;</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ************************************************************* -->
     <!--* LOGIN AND REGESTER-->
 
     <section class="register">
-        <div class="register__window">
-            <div class="register__window--close">x</div>
-            <div class="register__window--content">
-                <div class="register__window--content__left">
-                    <h3 class="section__heading section__heading--tertiory">
-                        login
-                    </h3>
-                    <form class="register__window--content__left--form">
-                        <label for="loginName" class="register__window--content__left--form__label">
-                            <span class="register__window--content__right--form__label--name">Name: </span>
-                            <input type="text" name="loginName" id="loginName" placeholder="Name/Email" class="register__window--content__left--form__label--input">
-                        </label>
-                        <label for="loginPassword" class="register__window--content__left--form__label">
-                            <span class="register__window--content__right--form__label--name"> Password: </span>
-                            <input type="password" name="loginPassword" id="loginPassword" placeholder="password" class="register__window--content__left--form__label--input">
-                        </label>
-                        <button type="submit" class="register__window--content__left--form__button">login</button>
-                        <a href="#" class="register__window--content__left--form__forgot">forgot password</a>
-                    </form>
-                </div>
-                <div class="register__window--content__right">
-                    <h3 class="section__heading section__heading--tertiory">
-                        register
-                    </h3>
-                    <form class="register__window--content__right--form">
-                        <label for="registerName" class="register__window--content__right--form__label">
-                            <span class="register__window--content__right--form__label--name">Name: </span>
-                            <input type="text" name="registerName" id="registerName" placeholder="Name"class="register__window--content__right--form__label--input">
-                        </label>
-                        <label for="registerEmail" class="register__window--content__right--form__label">
-                            <span class="register__window--content__right--form__label--name">Email: </span>
-                            <input type="email" name="registerEmail" id="registerEmail" placeholder="email"class="register__window--content__right--form__label--input">
-                        </label>
-                        <label for="reEnterPassword" class="register__window--content__right--form__label">
-                            <span class="register__window--content__right--form__label--name">Password: </span>
-                            <input type="password" name="reEnterPassword" id="reEnterPassword" placeholder="password" class="register__window--content__right--form__label--input">
-                        </label>
-                        <label for="conformPassword" class="register__window--content__right--form__label">
-                            <span class="register__window--content__right--form__label--name">&nbsp;</span>
-                            <input type="password" name="conformPassword" id="conformPassword" placeholder="re-enter password" class="register__window--content__right--form__label--input">
-                        </label>
-                        <button type="submit" class="register__window--content__right--form__button">register</button>
-                    </form>
-                </div>
-            </div>
+      <div class="register__window">
+        <div class="register__window--close">x</div>
+        <div class="register__window--content">
+          <div class="register__window--content__left">
+            <h3 class="section__heading section__heading--tertiory">login</h3>
+            <form class="register__window--content__left--form">
+              <label
+                for="loginName"
+                class="register__window--content__left--form__label"
+              >
+                <span
+                  class="register__window--content__right--form__label--name"
+                  >Name:
+                </span>
+                <input
+                  type="text"
+                  name="loginName"
+                  id="loginName"
+                  placeholder="Name/Email"
+                  class="register__window--content__left--form__label--input"
+                />
+              </label>
+              <label
+                for="loginPassword"
+                class="register__window--content__left--form__label"
+              >
+                <span
+                  class="register__window--content__right--form__label--name"
+                >
+                  Password:
+                </span>
+                <input
+                  type="password"
+                  name="loginPassword"
+                  id="loginPassword"
+                  placeholder="password"
+                  class="register__window--content__left--form__label--input"
+                />
+              </label>
+              <button
+                type="submit"
+                class="register__window--content__left--form__button"
+              >
+                login
+              </button>
+              <a href="#" class="register__window--content__left--form__forgot"
+                >forgot password</a
+              >
+            </form>
+          </div>
+          <div class="register__window--content__right">
+            <h3 class="section__heading section__heading--tertiory">
+              register
+            </h3>
+            <form class="register__window--content__right--form">
+              <label
+                for="registerName"
+                class="register__window--content__right--form__label"
+              >
+                <span
+                  class="register__window--content__right--form__label--name"
+                  >Name:
+                </span>
+                <input
+                  type="text"
+                  name="registerName"
+                  id="registerName"
+                  placeholder="Name"
+                  class="register__window--content__right--form__label--input"
+                />
+              </label>
+              <label
+                for="registerEmail"
+                class="register__window--content__right--form__label"
+              >
+                <span
+                  class="register__window--content__right--form__label--name"
+                  >Email:
+                </span>
+                <input
+                  type="email"
+                  name="registerEmail"
+                  id="registerEmail"
+                  placeholder="email"
+                  class="register__window--content__right--form__label--input"
+                />
+              </label>
+              <label
+                for="reEnterPassword"
+                class="register__window--content__right--form__label"
+              >
+                <span
+                  class="register__window--content__right--form__label--name"
+                  >Password:
+                </span>
+                <input
+                  type="password"
+                  name="reEnterPassword"
+                  id="reEnterPassword"
+                  placeholder="password"
+                  class="register__window--content__right--form__label--input"
+                />
+              </label>
+              <label
+                for="conformPassword"
+                class="register__window--content__right--form__label"
+              >
+                <span
+                  class="register__window--content__right--form__label--name"
+                  >&nbsp;</span
+                >
+                <input
+                  type="password"
+                  name="conformPassword"
+                  id="conformPassword"
+                  placeholder="re-enter password"
+                  class="register__window--content__right--form__label--input"
+                />
+              </label>
+              <button
+                type="submit"
+                class="register__window--content__right--form__button"
+              >
+                register
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ************************************************************* -->
     <!--* FOOTER -->
 
     <footer class="footer">
-        <div class="footer__content">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, veritatis quia blanditiis ea magnam ab porro! Suscipit nihil enim aspernatur officia, quo molestiae, iste doloribus nostrum id unde, corporis cumque? adipisicing elit. Odit, veritatis quia
-            </p>
-            <div class="footer__content--icons">
-                <a href="https://facebook.com">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="https://instagram.com">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="https://twittre.com">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a href="https://web.whatsapp.com">
-                    <i class="fa fa-whatsapp"></i>
-                </a>
-                <a href="https://gmail.com">
-                    <i class="fa fa-envelope"></i>
-                </a>
-
-            </div>
+      <div class="footer__content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+          veritatis quia blanditiis ea magnam ab porro! Suscipit nihil enim
+          aspernatur officia, quo molestiae, iste doloribus nostrum id unde,
+          corporis cumque? adipisicing elit. Odit, veritatis quia
+        </p>
+        <div class="footer__content--icons">
+          <a href="https://facebook.com">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://twittre.com">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="https://web.whatsapp.com">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+          <a href="https://gmail.com">
+            <i class="fa fa-envelope"></i>
+          </a>
         </div>
-        <div class="footer__copyright">
-            Copyright 2021 &copy; Talha Dar
-        </div>
+      </div>
+      <div class="footer__copyright">Copyright 2021 &copy; Talha Dar</div>
     </footer>
 
     <!-- ************************************************************* -->
     <!--* POPUP FOR ADD TO CART-->
     <section class="popup">
-        <div class="popup__window">
-            <div class="popup__window--close">x</div>
-            <div class="popup__window--content">
-                <div class="popup__window--content__left">
-                    <img src="./src/img/image4.jpg" alt="popup image">
-                </div>
-                <div class="popup__window--content__right">
-                    <h2 class="section__heading section__heading--tertiory">
-                        product title
-                    </h2>
-                    <p class="section__text tagline">
-                        some tagline about the product
-                    </p>
-                    <p class="section__text">
-                        information about the product Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quaerat cumque amet nisi, ipsa quas quidem, delectus excepturi. information about the product Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-                        quaerat cumque amet nisi, ipsa quas quidem, delectus excepturi.
-                    </p>
-                    <p class="section__text popup__price">
-                        Rs 1500
-                    </p>
-                    <p class="section__text">
-                        <input type="number" name="popup_amount" id="popup__amount" min="0">
-                    </p>
-                    <p class="section__text">
-                        <button class="popup__button">
-                            buy now
-                        </button>
-                    </p>
-                </div>
-            </div>
+      <div class="popup__window">
+        <div class="popup__window--close">x</div>
+        <div class="popup__window--content">
+          <div class="popup__window--content__left">
+            <img src="./src/img/image4.jpg" alt="popup image" />
+          </div>
+          <div class="popup__window--content__right">
+            <h2 class="section__heading section__heading--tertiory">
+              product title
+            </h2>
+            <p class="section__text tagline">some tagline about the product</p>
+            <p class="section__text">
+              information about the product Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Harum, quaerat cumque amet nisi,
+              ipsa quas quidem, delectus excepturi. information about the
+              product Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Harum, quaerat cumque amet nisi, ipsa quas quidem, delectus
+              excepturi.
+            </p>
+            <p class="section__text popup__price">Rs 1500</p>
+            <p class="section__text">
+              <input
+                type="number"
+                name="popup_amount"
+                id="popup__amount"
+                min="0"
+              />
+            </p>
+            <p class="section__text">
+              <button class="popup__button">buy now</button>
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <script src="./src/js/productsData.js"></script>
     <script src="./src/js/shop.js"></script>
     <script src="./src/js/popup.js"></script>
     <script src="./src/js/script.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,124 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEB ENGINEERING</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <section class="cart">
-        <h1 class="section__heading section__heading--primary">
-            shopping cart
-        </h1>
+      <h1 class="section__heading section__heading--primary">shopping cart</h1>
 
-        <div class="cart__content">
-            <div class="cart__content--left">
-                <table class="cart__content--left__table">
-                    <thead>
-                        <tr>
-                            <th class="cart__content--left__table--head table__span--2">product</th>
-                            <th class="cart__content--left__table--head">price</th>
-                            <th class="cart__content--left__table--head">quantity</th>
-                            <th class="cart__content--left__table--head">total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- <tr>
-                            <td class="cart__content--left__table--data table__span--2">
-                                <div class="cart__content--left__table--data__product">
-                                    <span>x</span>
-                                    <img src="./src/img/01.webp" class="cart__content--left__table--data__product--image">
-                                    <p class="cart__content--left__table--data__product--name">
-                                        this is the product name
-                                    </p>
-                                </div>
-                            </td>
-                            <td class="cart__content--left__table--data">Rs 100000</td>
-                            <td class="cart__content--left__table--data">
-                                <input type="number" name="cart_quantity" id="cartQuantity" class="cart__content--left__table--data__input">
-                            </td>
-                            <td class="cart__content--left__table--data">Rs 100000</td>
-                        </tr> -->
-                    </tbody>
-                </table>
-                <div class="cart__content--left__buttons">
-                    <a href="../../index.html" class="cart__content--left__buttons--return">continue shopping</a>
-                    <a href="#" class="cart__content--left__buttons--update">update cart</a>
-                </div>
-            </div>
-            <div class="cart__content--right">
-                <table class="cart__content--right__table">
-                    <thead>
-                        <tr>
-                            <th class="cart__content--right__table--head">Cart totals</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="cart__content--right__table--data">
-                                <div class="cart__content--right__table--data__subtotal">
-                                    <span>Subtotal</span>
-                                    <span class="cart__content--right__table--data__subtotal--price">Rs 1000000</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cart__content--right__table--data">
-                                <div class="cart__content--right__table--data__total">
-                                    <span>Total</span>
-                                    <span class="cart__content--right__table--data__total--price">Rs 1000000</span>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="cart__content--right__buttons">
-                    <a href="../../index.html" class="cart__content--right__buttons--update">proceed to checkout</a>
-                </div>
-            </div>
+      <div class="cart__content">
+        <div class="cart__content--left">
+          <table class="cart__content--left__table">
+            <thead>
+              <tr>
+                <th class="cart__content--left__table--head table__span--2">
+                  product
+                </th>
+                <th class="cart__content--left__table--head">price</th>
+                <th class="cart__content--left__table--head">quantity</th>
+                <th class="cart__content--left__table--head">total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr>
+                <td class="cart__content--left__table--data table__span--2">
+                    <div class="cart__content--left__table--data__product">
+                        <span>x</span>
+                        <img src="./src/img/01.webp" class="cart__content--left__table--data__product--image">
+                        <p class="cart__content--left__table--data__product--name">
+                            this is the product name
+                        </p>
+                    </div>
+                </td>
+                <td class="cart__content--left__table--data">Rs 100000</td>
+                <td class="cart__content--left__table--data">
+                    <input type="number" name="cart_quantity" id="cartQuantity" class="cart__content--left__table--data__input">
+                </td>
+                <td class="cart__content--left__table--data">Rs 100000</td>
+            </tr> -->
+            </tbody>
+          </table>
+          <div class="cart__content--left__buttons">
+            <a
+              href="../../index.html"
+              class="cart__content--left__buttons--return"
+              >continue shopping</a
+            >
+            <a href="#" class="cart__content--left__buttons--update"
+              >update cart</a
+            >
+          </div>
         </div>
+        <div class="cart__content--right">
+          <table class="cart__content--right__table">
+            <thead>
+              <tr>
+                <th class="cart__content--right__table--head">Cart totals</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="cart__content--right__table--data">
+                  <div class="cart__content--right__table--data__subtotal">
+                    <span>Subtotal</span>
+                    <span
+                      class="cart__content--right__table--data__subtotal--price"
+                      >Rs 1000000</span
+                    >
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="cart__content--right__table--data">
+                  <div class="cart__content--right__table--data__total">
+                    <span>Total</span>
+                    <span
+                      class="cart__content--right__table--data__total--price"
+                      >Rs 1000000</span
+                    >
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="cart__content--right__buttons">
+            <a
+              href="../../index.html"
+              class="cart__content--right__buttons--update"
+              >proceed to checkout</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ************************************************************* -->
     <!--* FOOTER -->
 
     <footer class="footer">
-        <div class="footer__content">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, veritatis quia blanditiis ea magnam ab porro! Suscipit nihil enim aspernatur officia, quo molestiae, iste doloribus nostrum id unde, corporis cumque? adipisicing elit. Odit, veritatis quia
-            </p>
-            <div class="footer__content--icons">
-                <a href="https://facebook.com">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="https://instagram.com">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="https://twittre.com">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a href="https://web.whatsapp.com">
-                    <i class="fa fa-whatsapp"></i>
-                </a>
-                <a href="https://gmail.com">
-                    <i class="fa fa-envelope"></i>
-                </a>
-
-            </div>
+      <div class="footer__content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+          veritatis quia blanditiis ea magnam ab porro! Suscipit nihil enim
+          aspernatur officia, quo molestiae, iste doloribus nostrum id unde,
+          corporis cumque? adipisicing elit. Odit, veritatis quia
+        </p>
+        <div class="footer__content--icons">
+          <a href="https://facebook.com">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://twittre.com">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="https://web.whatsapp.com">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+          <a href="https://gmail.com">
+            <i class="fa fa-envelope"></i>
+          </a>
         </div>
-        <div class="footer__copyright">
-            Copyright 2021 &copy; Talha Dar
-        </div>
+      </div>
+      <div class="footer__copyright">Copyright 2021 &copy; Talha Dar</div>
     </footer>
 
     <script src="./src/js/cart.js"></script>
     <script src="./src/js/productsData.js"></script>
-</body>
-
+  </body>
 </html>
