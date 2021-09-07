@@ -51,8 +51,9 @@ register.addEventListener('click', closeRegister);
 //********************************************* */
 //* SEARCH
 
-const removeSearchBackground = () => {
+const removeSearchBackground = (event) => {
   const element = event.target;
+
   if (
     element.classList.contains('search') ||
     element.closest('a').classList.contains('search__form--btn')
@@ -67,6 +68,7 @@ navigationIcon.addEventListener('click', (event) => {
     event.target.firstElementChild === null
       ? event.target.closest('span')
       : event.target.firstElementChild;
+
   element.classList.toggle('navigation__icon--toggle');
   navigation.classList.toggle('navigation__open');
 });
@@ -83,7 +85,7 @@ searchFormSearchIcon.addEventListener('click', (event) => {
   event.preventDefault();
 
   sessionStorage.clear();
-  sessionStorage.setItem(searchBoxInput.value, searchBoxInput.value);
+  sessionStorage.setItem('searched-item', searchBoxInput.value);
 
   window.location = url.replace(page, 'shop');
 

@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "public": ".",
+    "site": "online-shopping-td",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

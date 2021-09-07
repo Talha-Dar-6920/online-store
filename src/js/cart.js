@@ -79,10 +79,10 @@ const calculation = (event) => {
   tbody
     .querySelectorAll('.cart__content--left__table--data__product--remove')
     .forEach((element) => {
-      element.addEventListener('click', () => {
+      element.addEventListener('click', (event) => {
         elementId = event.target.id;
         localStorage.removeItem(elementId);
-        calculation();
+        calculation(event);
       });
     });
 };

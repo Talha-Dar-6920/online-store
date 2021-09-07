@@ -29,7 +29,7 @@ const renderShopProducts = (data, pageNo = 0, catagory = '') => {
 //********************************************* */
 //* ADDING LISTNERS TO ELEMENTS
 
-const catagory = sessionStorage.getItem(sessionStorage.key(1));
+const catagory = sessionStorage.getItem('searched-item');
 
 renderShopProducts(productsData, 0, catagory === null ? '' : catagory);
 
